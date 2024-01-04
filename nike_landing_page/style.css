@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 85%;
+    margin: 0 auto;
+    color: black;
+    transition: all 0.2s background ease-in-out;
+}
+
+nav {
+    position: fixed;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99999;
+}
+
+.logo-img{
+    width: 170px;
+    height: 100px;
+    position: relative;
+    left: -20px;
+}
+
+.logo-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav-menu {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-item {
+    margin: 0px 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+    /* transition: all .2s ease-in; */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    width: 40%;
+}
+
+.heading {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.4rem;
+}
+
+.btn {
+    padding: 10px 20px;
+    width: fit-content;
+    background: #000;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.2s all ease-in;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.product-img {
+    transform: rotate(-20deg);
+    width: 600px;
+    height: 700px;
+    position: relative;
+    top: -50px;
+}
+
+.variants {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 10px;
+    z-index: 9999999;
+}
+
+.variant {
+    width: 90px;
+    height: 110px;
+    margin: 0px 10px;
+    position: relative;
+    top: 0;
+    cursor: pointer;
+    transition: 0.2s all ease-in;
+}
+
+.variant img {
+    width: 100%;
+    height: 100%;
+}
+
+.variant:hover {
+    position: relative;
+    top: -20px;
+    transition: 0.2s all ease-in;
+}
+
+.active {
+    position: relative;
+    top: -20px;
+    animation: activeproduct ease-in-out infinite 0.8s;
+}
+
+@keyframes activeproduct {
+
+    0% {
+        top: -20px;
+    }
+
+    50% {
+        top: -15px;
+    }
+
+    100% {
+        top: -20px;
+    }
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
